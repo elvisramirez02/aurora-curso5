@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "mode": "synthetic",
+    "seed": 635,
+    "rows_total": 120000,
+    "umbral_rechazo": 0.2,
+    "nota": "Conteos de referencia calculados por una simulacion en Python de nb_10/20/30."
+  },
+  "dims": {
+    "v1": {
+      "dim_tienda": {
+        "raw_rows": 13,
+        "clean_rows": 12
+      },
+      "dim_producto": {
+        "raw_rows": 150,
+        "clean_rows": 150
+      },
+      "dim_cliente": {
+        "raw_rows": 2000,
+        "clean_rows": 2000
+      },
+      "dim_empleado": {
+        "raw_rows": 60,
+        "clean_rows": 60
+      }
+    },
+    "v2": {
+      "dim_tienda": {
+        "raw_rows": 14,
+        "clean_rows": 13
+      },
+      "dim_producto": {
+        "raw_rows": 151,
+        "clean_rows": 151
+      },
+      "dim_cliente": {
+        "raw_rows": 2000,
+        "clean_rows": 2000
+      },
+      "dim_empleado": {
+        "raw_rows": 60,
+        "clean_rows": 60
+      }
+    }
+  },
+  "files": {
+    "dims/v1/dim_tienda.csv": {
+      "rows": 13,
+      "bytes": 493,
+      "sha256": "2edb416628f7f576"
+    },
+    "dims/v1/dim_producto.csv": {
+      "rows": 150,
+      "bytes": 5504,
+      "sha256": "455e4924edd18a2d"
+    },
+    "dims/v1/dim_cliente.csv": {
+      "rows": 2000,
+      "bytes": 51920,
+      "sha256": "c81ae65bf640c3e6"
+    },
+    "dims/v1/dim_empleado.csv": {
+      "rows": 60,
+      "bytes": 1641,
+      "sha256": "59bc707577f16552"
+    },
+    "dims/v2/dim_tienda.csv": {
+      "rows": 14,
+      "bytes": 531,
+      "sha256": "e0c50d65781b346e"
+    },
+    "dims/v2/dim_producto.csv": {
+      "rows": 151,
+      "bytes": 5551,
+      "sha256": "3a51e22e4ece28f8"
+    },
+    "dims/v2/dim_cliente.csv": {
+      "rows": 2000,
+      "bytes": 51920,
+      "sha256": "c81ae65bf640c3e6"
+    },
+    "dims/v2/dim_empleado.csv": {
+      "rows": 60,
+      "bytes": 1641,
+      "sha256": "59bc707577f16552"
+    },
+    "batches/b001/fact_ventas.csv": {
+      "rows": 102000,
+      "bytes": 3950007,
+      "sha256": "56dedc6e9ed95aec"
+    },
+    "batches/b002/fact_ventas.csv": {
+      "rows": 2571,
+      "bytes": 99609,
+      "sha256": "224d19866099aa26"
+    },
+    "batches/b003/fact_ventas.csv": {
+      "rows": 2699,
+      "bytes": 104527,
+      "sha256": "96d5ef8778b8cdd6"
+    },
+    "batches/b004/fact_ventas.csv": {
+      "rows": 2721,
+      "bytes": 105681,
+      "sha256": "c675c708a68a1928"
+    },
+    "batches/b005/fact_ventas.csv": {
+      "rows": 2661,
+      "bytes": 103166,
+      "sha256": "cd5f137227d349b5"
+    },
+    "batches/b006/fact_ventas.csv": {
+      "rows": 2571,
+      "bytes": 115467,
+      "sha256": "ea02882cc7ecaf29"
+    },
+    "batches/b006_malo/fact_ventas.csv": {
+      "rows": 2571,
+      "bytes": 116844,
+      "sha256": "3c481df1183592d6"
+    },
+    "batches/b007_corrupto/fact_ventas.csv": {
+      "rows": 2571,
+      "bytes": 115308,
+      "sha256": "d782bfdc6d91a347"
+    }
+  },
+  "batches": {
+    "b001": {
+      "bronze_rows": 102000,
+      "silver_dedup_rows": 102000,
+      "rejected": 0,
+      "rejects_by_motivo": {},
+      "gate_abort": false,
+      "inserted": 102000,
+      "updated": 0,
+      "unchanged": 0,
+      "affected_dates": 465,
+      "silver_total": 102000,
+      "silver_sum_monto": "26182325.58",
+      "gold_total": 102000,
+      "gold_sum_monto": "26182325.58",
+      "gold_sum_margen": "9200791.86",
+      "agg_dia_tienda_rows": 5580,
+      "dims_version": "v1"
+    },
+    "b002": {
+      "bronze_rows": 2571,
+      "silver_dedup_rows": 2571,
+      "rejected": 0,
+      "rejects_by_motivo": {},
+      "gate_abort": false,
+      "inserted": 2571,
+      "updated": 0,
+      "unchanged": 0,
+      "affected_dates": 13,
+      "silver_total": 104571,
+      "silver_sum_monto": "26843651.06",
+      "gold_total": 104571,
+      "gold_sum_monto": "26843651.06",
+      "gold_sum_margen": "9434734.41",
+      "agg_dia_tienda_rows": 5724,
+      "dims_version": "v1"
+    },
+    "b003": {
+      "bronze_rows": 2699,
+      "silver_dedup_rows": 2699,
+      "rejected": 0,
+      "rejects_by_motivo": {},
+      "gate_abort": false,
+      "inserted": 2571,
+      "updated": 0,
+      "unchanged": 128,
+      "affected_dates": 25,
+      "silver_total": 107142,
+      "silver_sum_monto": "27509703.35",
+      "gold_total": 107142,
+      "gold_sum_monto": "27509703.35",
+      "gold_sum_margen": "9669206.60",
+      "agg_dia_tienda_rows": 5868,
+      "dims_version": "v1"
+    },
+    "b004": {
+      "bronze_rows": 2721,
+      "silver_dedup_rows": 2721,
+      "rejected": 0,
+      "rejects_by_motivo": {},
+      "gate_abort": false,
+      "inserted": 2571,
+      "updated": 150,
+      "unchanged": 0,
+      "affected_dates": 148,
+      "silver_total": 109713,
+      "silver_sum_monto": "28176367.80",
+      "gold_total": 109713,
+      "gold_sum_monto": "28176367.80",
+      "gold_sum_margen": "9912566.11",
+      "agg_dia_tienda_rows": 6023,
+      "dims_version": "v2"
+    },
+    "b005": {
+      "bronze_rows": 2661,
+      "silver_dedup_rows": 2653,
+      "rejected": 42,
+      "rejects_by_motivo": {
+        "cantidad_invalida": 7,
+        "fecha_invalida": 7,
+        "monto_invalido": 7,
+        "producto_inexistente": 7,
+        "tienda_inexistente": 7,
+        "venta_id_nulo": 7
+      },
+      "gate_abort": false,
+      "inserted": 2611,
+      "updated": 0,
+      "unchanged": 0,
+      "affected_dates": 51,
+      "silver_total": 112324,
+      "silver_sum_monto": "28834470.40",
+      "gold_total": 112324,
+      "gold_sum_monto": "28834470.40",
+      "gold_sum_margen": "10149978.56",
+      "agg_dia_tienda_rows": 6168,
+      "dims_version": "v2"
+    },
+    "b006": {
+      "bronze_rows": 2571,
+      "silver_dedup_rows": 2571,
+      "rejected": 0,
+      "rejects_by_motivo": {},
+      "gate_abort": false,
+      "inserted": 2571,
+      "updated": 0,
+      "unchanged": 0,
+      "affected_dates": 13,
+      "silver_total": 114895,
+      "silver_sum_monto": "29494818.85",
+      "gold_total": 114895,
+      "gold_sum_monto": "29494818.85",
+      "gold_sum_margen": "10394716.87",
+      "agg_dia_tienda_rows": 6324,
+      "dims_version": "v2"
+    }
+  },
+  "drills": {
+    "b006_malo": {
+      "bronze_rows": 2571,
+      "silver_dedup_rows": 2571,
+      "rejected": 771,
+      "rejects_by_motivo": {
+        "monto_invalido": 771
+      },
+      "gate_abort": true,
+      "nota": "Se simula sobre el estado posterior a b006 SIN aplicarlo. Debe abortar en silver (quality gate)."
+    },
+    "b007_corrupto": {
+      "bronze_rows": 2571,
+      "silver_dedup_rows": 2571,
+      "rejected": 0,
+      "rejects_by_motivo": {},
+      "gate_abort": false,
+      "inserted": 2571,
+      "updated": 0,
+      "unchanged": 0,
+      "affected_dates": 13,
+      "silver_total": 117466,
+      "silver_sum_monto": "31743215.48",
+      "gold_total": 117466,
+      "gold_sum_monto": "31743215.48",
+      "gold_sum_margen": "12212340.94",
+      "agg_dia_tienda_rows": 6480,
+      "nota": "Se simula sobre el estado posterior a b006 SIN aplicarlo. Pasa todas las validaciones; el desvio solo se ve comparando totales."
+    }
+  }
+}
